@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>To-Do-List</title>
+
+</head>
+
+<body class="h-screen w-screen bg-gradient-to-b from-[#e74c3c] to-[#f39c12] py-32 px-[30%] mx-auto">
+
+    <div class="border border-[3px] w-full h-[700px] p-5">
+        <input type="text" name="input_text" id="input_text" placeholder="Quelle est votre tâche ?" class="w-[44%] h-10 p-5 rounded-[30px]">
+
+        <button id="add_item" class="w-[10%]  rounded-[30px] h-10 bg-green-600 mr-14"><i class="fa-solid fa-plus text-white text-2xl"></i></button>
+
+        <label for="input_filter" class="text-2xl text-white underline">Filtre :</label>
+        <input type="text" id="input_filter" name="input_filter" class="w-[25%] h-10 p-5 rounded-[30px]" placeholder="Filtre">
+
+        <ul id="item_list" class="w-full h-full my-10"></ul>
+    </div>
+
+</body>
+
+</html>
